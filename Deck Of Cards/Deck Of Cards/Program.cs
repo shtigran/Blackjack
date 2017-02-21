@@ -11,15 +11,8 @@ namespace Deck_Of_Cards
         static void Main(string[] args)
         {
             Deck deck1 = new Deck();
-            for (int i = 0; i < 4; i++)
-            {
 
-                for (int j = 0; j < 8; j++)
-                    Console.Write(deck1.arr[i,j] + "" );
-
-                Console.WriteLine();
-            }
-
+            deck1.ShowDeck();
 
             Console.ReadKey();
         }
@@ -47,6 +40,20 @@ namespace Deck_Of_Cards
                 arr[r, c] = i;
             }
             
+
+        }
+
+        public void ShowDeck ()
+        {
+            for (int i = 0; i < 4; i++)
+            {
+
+                for (int j = 0; j < 8; j++)
+                    Console.Write(arr[i, j] + "");
+
+                Console.WriteLine();
+            }
+
 
         }
 

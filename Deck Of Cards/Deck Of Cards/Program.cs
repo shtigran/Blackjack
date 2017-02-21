@@ -14,4 +14,22 @@ namespace Deck_Of_Cards
 
         }
     }
+
+    class Deck
+    {
+
+        private int[,] arr = new int[4, 8];
+
+        public SetDeck ()
+        {
+
+
+
+        }
+
+
+
+    }
+
+
 }

@@ -29,8 +29,8 @@ namespace Deck_Of_Cards
 
         public void SetDeck ()
         {
-
-            Random rand = new Random(DateTime.Now.Second);
+            arr = new int[4, 8];
+            Random rand = new Random(DateTime.Now.Millisecond);
             int r, c;
             for (int i = 1; i <= 32; i++)
             {

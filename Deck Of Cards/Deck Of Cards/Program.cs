@@ -11,9 +11,13 @@ namespace Deck_Of_Cards
         static void Main(string[] args)
         {
             Deck deck1 = new Deck();
-            foreach (var item in deck1.arr)
+            for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine(item);
+
+                for (int j = 0; j < 8; j++)
+                    Console.Write(deck1.arr[i,j] + "" );
+
+                Console.WriteLine();
             }
 
 

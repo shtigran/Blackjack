@@ -35,7 +35,7 @@ namespace Deck_Of_Cards
             for (int i = 1; i <= 32; i++)
             {
                 while (true)
-                {                  
+                {                   
                     r = rand.Next(0, 4);                   
                     c = rand.Next(0, 8);
                     

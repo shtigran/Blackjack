@@ -62,7 +62,7 @@ namespace Deck_Of_Cards
             {
 
                 for (int j = 0; j < 8; j++)
-                    Console.Write(arr[i, j] + " ");
+                    Console.Write(arr[i, j] + "  ");
 
                 Console.WriteLine();
             }

@@ -57,16 +57,23 @@ namespace Deck_Of_Cards
 
         public void ShowDeck ()
         {
+            int number = 1;
             Console.WriteLine();
-            for (int i = 0; i < 4; i++)
+            while (number <= 32)
             {
+                for (int i = 0; i < 4; i++)
+                {
 
-                for (int j = 0; j < 8; j++)
-                    Console.Write(arr[i, j] + "  ");
+                    for (int j = 0; j < 8; j++)
+                    {
+                        if (arr[i, j] == number)
+                            Console.Write($"{cards[j]} of {suit[i]}");
+                        number++;
+                    }
 
-                Console.WriteLine();
+                    Console.WriteLine();
+                }
             }
-
 
         }
 

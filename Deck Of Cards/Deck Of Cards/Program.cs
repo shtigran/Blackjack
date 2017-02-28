@@ -25,7 +25,7 @@ namespace Deck_Of_Cards
 
         public int [,] arr = new int[4, 8];
         public string[] suit = new string[4] { "Diamonds", "Hearts", "Spades", "Clubs"};
-        public string[] cards = new string[8] { "Seven", "Еight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
+        public string[] cards = new string[8] { "Seven", "eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
 
         public void SetDeck ()
         {
@@ -65,8 +65,8 @@ namespace Deck_Of_Cards
                     for (int j = 0; j < 8; j++)
                     {
                         if (arr[i, j] == number)
-                            Console.Write(number);
-                        
+                            Console.Write($"{cards[j]} of {suit[i]}");
+
                     }
 
                 }

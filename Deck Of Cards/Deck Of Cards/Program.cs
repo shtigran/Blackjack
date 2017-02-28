@@ -13,7 +13,7 @@ namespace Deck_Of_Cards
             Deck deck1 = new Deck();
             deck1.SetDeck();
             deck1.ShowDeck();
-
+     
 
 
       Console.ReadKey();
@@ -73,6 +73,13 @@ namespace Deck_Of_Cards
         Console.WriteLine();
         number++;
       }
+
+        }
+
+        public void Game ()
+        {
+
+
 
         }
 

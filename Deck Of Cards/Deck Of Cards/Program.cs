@@ -13,8 +13,8 @@ namespace Deck_Of_Cards
             
 
       Game game1 = new Game();
-      game1.deck.SetDeck();
-      game1.deck.ShowDeck();
+
+      game1.ShowDeck();
 
       Console.ReadKey();
         }
@@ -83,10 +83,17 @@ namespace Deck_Of_Cards
     public Game()
     {
       deck = new Deck();
+      deck.SetDeck();
+    }
+
+    public void ShowDeck ()
+    {
+      deck.ShowDeck();
+
     }
     public Deck deck;
     
-   
+    
    
    }
 

@@ -221,14 +221,34 @@ namespace Deck_Of_Cards
         if (flag == false)
           break;
 
-        Console.WriteLine("Do You want any card or check ? (y/n)");
-        key = Convert.ToChar(Console.ReadLine());
-        while (key == 'y')
+                do
+                {
+                    Console.WriteLine("Do You want any card or check ? (y/n)");
+                    key = Convert.ToChar(Console.ReadLine());
+                    if (key == 'y')
+                    {
 
 
 
-          flag = false;
+                    }
+                    else
+                    {
+                        flag = false;
+                        if(sumPlayer > sumComp)
+                           Console.WriteLine("You Win!!!");
+                       else if (sumComp > sumPlayer)
+                            Console.WriteLine("You lose!!!");
+                        else Console.WriteLine("Draw, try again");
+                        Console.WriteLine("Good Luck!!!");
+                        break;
+                    }
 
+                }
+                while (sumPlayer < 21 && sumComp < 21);
+
+
+
+         
 
       }
 

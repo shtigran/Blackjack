@@ -15,6 +15,7 @@ namespace Deck_Of_Cards
       Game game1 = new Game();
 
       game1.ShowDeck();
+      game1.Start();
 
       Console.ReadKey();
         }
@@ -91,10 +92,33 @@ namespace Deck_Of_Cards
       deck.ShowDeck();
 
     }
-    public Deck deck;
-    
-    
-   
-   }
+
+
+    private Deck deck;
+
+    public void Start ()
+    {
+      deck.SetDeck();
+      string cardsPlayer = string.Empty;
+      string cardsComp = string.Empty;
+
+      int sumPlayer = 0;
+      int sumComp = 0;
+
+      bool flag = true;
+
+      while (flag)
+      {
+        Console.WriteLine("\nWe Start Our Game!!!\n");
+
+        
+
+
+      }
+
+
+    }
+
+  }
 
 }

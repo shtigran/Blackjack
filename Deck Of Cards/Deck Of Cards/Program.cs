@@ -56,7 +56,7 @@ namespace Deck_Of_Cards
         public void ShowDeck ()
         {
             int number = 1;
-            Console.WriteLine("***The sequence of Cards in the Deck***");
+            Console.WriteLine("***The sequence of Cards in the Deck***\n");
             while (number <= 32)
             {
                 for (int i = 0; i < 4; i++)
@@ -65,7 +65,7 @@ namespace Deck_Of_Cards
                     for (int j = 0; j < 8; j++)
                     {
                         if (arr[i, j] == number)
-                            Console.Write($"Card {number}: {cards[j]} of {suit[i]}");
+                            Console.Write($"Card {number:d2}:   * {cards[j]} of {suit[i]} *");
 
                     }
 

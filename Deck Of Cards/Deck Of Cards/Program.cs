@@ -76,7 +76,7 @@ namespace Deck_Of_Cards
 
     }
 
-    public void Handing(ref int n, string str1, string str2, int sum1, int sum2)
+    public void Handing(ref int n, ref int sum1, ref int sum2, string str1, string str2)
     {
       while (n <= 4)
       {
@@ -172,6 +172,28 @@ namespace Deck_Of_Cards
 
     }
 
+    public bool check (int sumPlayer, int sumComp)
+    {
+      if (sumPlayer == sumComp && sumComp == 21)
+      {
+        Console.WriteLine("Draw, Start new game!!!");
+        return false;
+      }
+
+      if (sumPlayer == 21)
+      {
+        Console.WriteLine("Player win, Congratulations!!!");
+        return false;
+      }
+
+      if (sumComp == 21)
+      {
+        Console.WriteLine("Computer win, you lose!!! Try again...");
+        return false;
+      }
+      return true;
+    }
+
 
     private Deck deck;
 
@@ -190,7 +212,13 @@ namespace Deck_Of_Cards
       while (flag)
       {
         Console.WriteLine("\nWe Start Our Game!!!\n");
-        deck.Handing(ref n, cardsPlayer, cardsComp, sumPlayer, sumComp);
+        deck.Handing(ref n, ref sumPlayer, ref sumComp, cardsPlayer, cardsComp); // Start game Handing two cards for each player
+
+        flag = check(sumPlayer, sumComp); // Checking if any player wins
+        if (flag == false)
+          break;
+        
+
         flag = false;
 
 

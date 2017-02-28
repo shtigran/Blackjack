@@ -11,14 +11,12 @@ namespace Deck_Of_Cards
         static void Main(string[] args)
         {
             Deck deck1 = new Deck();
-            deck1.ShowDeck();
             deck1.SetDeck();
             deck1.ShowDeck();
 
-            deck1.SetDeck();
-            deck1.ShowDeck();
 
-            Console.ReadKey();
+
+      Console.ReadKey();
         }
     }
 
@@ -58,7 +56,7 @@ namespace Deck_Of_Cards
         public void ShowDeck ()
         {
             int number = 1;
-            Console.WriteLine();
+            
             while (number <= 32)
             {
                 for (int i = 0; i < 4; i++)
@@ -67,13 +65,14 @@ namespace Deck_Of_Cards
                     for (int j = 0; j < 8; j++)
                     {
                         if (arr[i, j] == number)
-                            Console.Write($"{cards[j]} of {suit[i]}");
-                        number++;
+                            Console.Write(number);
+                        
                     }
 
-                    Console.WriteLine();
                 }
-            }
+        Console.WriteLine();
+        number++;
+      }
 
         }
 

@@ -182,7 +182,7 @@ namespace Deck_Of_Cards
 
       if (sumPlayer == 21)
       {
-        Console.WriteLine("Player win, Congratulations!!!");
+        Console.WriteLine("Player You win, Congratulations!!!");
         return false;
       }
 
@@ -206,7 +206,7 @@ namespace Deck_Of_Cards
 
       int sumPlayer = 0;
       int sumComp = 0;
-
+      char key;
       bool flag = true;
 
       while (flag)
@@ -217,9 +217,14 @@ namespace Deck_Of_Cards
         flag = check(sumPlayer, sumComp); // Checking if any player wins
         if (flag == false)
           break;
-        
 
-        flag = false;
+        Console.WriteLine("Do You want any card or check ? (y/n)");
+        key = Convert.ToChar(Console.ReadLine());
+        while (key == 'y')
+
+
+
+          flag = false;
 
 
       }

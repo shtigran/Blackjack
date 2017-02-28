@@ -165,7 +165,6 @@ namespace Deck_Of_Cards
                         {
                             if (n % 2 != 0)
                             {
-                                Console.WriteLine(str1);
                                 str1 += $" *{cards[j]} of {suit[i]}*";
                                 int b = 0;
                                 switch (cards[j])
@@ -225,8 +224,8 @@ namespace Deck_Of_Cards
                 }
                 n++;
             }
-            Console.WriteLine($"The Player has: {str1} (sum is: {sum1})\n");
-            Console.WriteLine($"The Computer has: {str2} (sum is: {sum2})\n");
+            Console.WriteLine($"\nThe Player has: {str1}\n(sum is: {sum1})\n\n");
+            Console.WriteLine($"The Computer has: {str2}\n(sum is: {sum2})\n");
 
         }
 
@@ -306,7 +305,14 @@ namespace Deck_Of_Cards
                     {
 
                         deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp);
-
+                        check(sumPlayer, sumComp);
+                        if (sumPlayer > 21 && sumComp < 21)
+                            Console.WriteLine("You lose!!!");
+                        if (sumComp > 21 && sumPlayer < 21)
+                            Console.WriteLine("You win!!!");
+                        if (sumComp > 21 && sumPlayer > 21)
+                            Console.WriteLine("Draw, try again");
+                        
 
                     }
                     else

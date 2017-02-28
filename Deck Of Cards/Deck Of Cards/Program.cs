@@ -65,7 +65,7 @@ namespace Deck_Of_Cards
                     for (int j = 0; j < 8; j++)
                     {
                         if (arr[i, j] == number)
-                            Console.Write($"{cards[j]} of {suit[i]}");
+                            Console.Write($"Card {number}: {cards[j]} of {suit[i]}");
 
                     }
 

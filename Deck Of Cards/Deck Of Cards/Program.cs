@@ -211,7 +211,10 @@ namespace Deck_Of_Cards
 
       while (flag)
       {
+        Console.WriteLine( "*****Welcome to Blackjack*****" );
         Console.WriteLine("\nWe Start Our Game!!!\n");
+        Console.WriteLine(new string('-', 80));
+        Console.WriteLine();
         deck.Handing(ref n, ref sumPlayer, ref sumComp, cardsPlayer, cardsComp); // Start game Handing two cards for each player
 
         flag = check(sumPlayer, sumComp); // Checking if any player wins

@@ -25,7 +25,7 @@ namespace Deck_Of_Cards
 
         public int [,] arr = new int[4, 8];
         public string[] suit = new string[4] { "Diamonds", "Hearts", "Spades", "Clubs"};
-        public string[] cards = new string[8] { "Seven", "eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
+        public string[] cards = new string[8] { "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
 
         public void SetDeck ()
         {

@@ -29,10 +29,10 @@ namespace Deck_Of_Cards
 
     public void SetDeck()
     {
-      arr = new int[4, 8];
+      arr = new int[4, 13];
       Random rand = new Random(DateTime.Now.Millisecond);
       int r, c;
-      for (int i = 1; i <= 32; i++)
+      for (int i = 1; i <= 52; i++)
       {
         while (true)
         {
@@ -49,8 +49,6 @@ namespace Deck_Of_Cards
         }
 
       }
-
-
     }
 
     public void ShowDeck()

@@ -11,9 +11,8 @@ namespace Deck_Of_Cards
     static void Main(string[] args)
     {
 
-
       Game game = new Game();
-      game.ShowDeck();
+      
       game.Start();
        
 
@@ -310,19 +309,19 @@ namespace Deck_Of_Cards
     {
       if (sumPlayer == sumComp && sumComp == 21)
       {
-        Console.WriteLine("Draw, Start new game!!!");
+        Console.WriteLine("\nDraw, Start new game!!!");
         return false;
       }
 
       if (sumPlayer == 21)
       {
-        Console.WriteLine("Player You win, Congratulations!!!");
+        Console.WriteLine("\nPlayer You win, Congratulations!!!");
         return false;
       }
 
       if (sumComp == 21)
       {
-        Console.WriteLine("Computer win, you lose!!! Try again...");
+        Console.WriteLine("\nComputer win, you lose!!! Try again...");
         return false;
       }
       return true;
@@ -346,8 +345,8 @@ namespace Deck_Of_Cards
       while (flag)
       {
         Console.WriteLine("*****Welcome to Blackjack*****");
-        Console.WriteLine("\nWe Start Our Game!!!\n");
-        Console.WriteLine(new string('-', 80));
+        Console.WriteLine("\n_____We Start Our Game!!!_____\n");
+        Console.WriteLine(new string('-', 30));
         Console.WriteLine();
         deck.Handing(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp); // Start game Handing two cards for each player
 

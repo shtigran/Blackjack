@@ -55,12 +55,12 @@ namespace Deck_Of_Cards
     {
       int number = 1;
       Console.WriteLine("***The sequence of Cards in the Deck***\n");
-      while (number <= 32)
+      while (number <= 52)
       {
         for (int i = 0; i < 4; i++)
         {
 
-          for (int j = 0; j < 8; j++)
+          for (int j = 0; j < 13; j++)
           {
             if (arr[i, j] == number)
               Console.Write($"Card {number:d2}:   * {cards[j]} of {suit[i]} *");

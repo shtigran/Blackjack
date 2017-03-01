@@ -12,9 +12,9 @@ namespace Deck_Of_Cards
     {
 
       Game game = new Game();
-      
+
       game.Start();
-       
+
 
       Console.ReadKey();
     }
@@ -360,7 +360,6 @@ namespace Deck_Of_Cards
           key = Convert.ToChar(Console.ReadLine());
           if (key == 'y')
           {
-
             deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp);
             check(sumPlayer, sumComp);
             if (sumPlayer > 21 && sumComp < 21)
@@ -374,10 +373,10 @@ namespace Deck_Of_Cards
           {
             flag = false;
             if (sumPlayer > sumComp)
-              Console.WriteLine("You Win!!!");
+              Console.WriteLine("\nYou Win!!!");
             else if (sumComp > sumPlayer)
-              Console.WriteLine("You lose!!!");
-            else Console.WriteLine("Draw, try again");
+              Console.WriteLine("\nYou lose!!!");
+            else Console.WriteLine("\nDraw, try again");
             Console.WriteLine("Good Luck!!!");
             break;
           }

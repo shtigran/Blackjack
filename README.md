@@ -23,3 +23,7 @@ This is a light version of the game that runs on the console. With this program 
 The progrm has two classes, which implement severeal methods.
 The first class is Deck, which is responsible for creatin deck, set deck, and for handing. There are SetDeck, ShowDeck, Handing and HandingOne methods in Deck class, which allow manipulate with deck of card.
 The second class is Game class, which is responsible for gaming process and has Start() method, which uses the methods of Deck class.
+In Programm class we create an object of Game and invoke its start methods and game starts.
+For more information see Code: 
+  - [For more information see Code:]
+  [For more information see Code:]: <https://github.com/shtigran/Blackjack/blob/master/Deck%20Of%20Cards/Deck%20Of%20Cards/Program.cs>

@@ -370,8 +370,7 @@ namespace Deck_Of_Cards
             Console.WriteLine("Draw, try again");
         }
         else if (key == 'n') 
-        {
-
+        {    
           if (sumPlayer > sumComp)
             Console.WriteLine("\nYou Win!!!");
           else if (sumComp > sumPlayer)

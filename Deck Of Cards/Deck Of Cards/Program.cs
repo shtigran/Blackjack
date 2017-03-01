@@ -173,8 +173,8 @@ namespace Deck_Of_Cards
         }
         n++;
       }
-      Console.WriteLine($"The Player has: {str1} (sum is: {sum1})\n");
-      Console.WriteLine($"The Computer has: {str2} (sum is: {sum2})\n");
+      Console.WriteLine($"The Player has: {str1}\n(sum is: {sum1})\n");
+      Console.WriteLine($"The Computer has: {str2}\n(sum is: {sum2})\n");
       Console.WriteLine(new string('-', 80));
 
     }

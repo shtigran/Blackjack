@@ -340,53 +340,51 @@ namespace Deck_Of_Cards
       int sumPlayer = 0;
       int sumComp = 0;
       char key;
-      bool flag = true;
+      bool flag;
 
-      while (flag)
+
+      Console.WriteLine("*****Welcome to Blackjack*****");
+      Console.WriteLine("\n_____We Start Our Game!!!_____\n");
+      Console.WriteLine(new string('-', 30));
+      Console.WriteLine();
+      deck.Handing(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp); // Start game Handing two cards for each player
+
+      flag = check(sumPlayer, sumComp); // Checking if any player wins
+      if (flag == false)
+        return;
+
+      do
       {
-        Console.WriteLine("*****Welcome to Blackjack*****");
-        Console.WriteLine("\n_____We Start Our Game!!!_____\n");
-        Console.WriteLine(new string('-', 30));
-        Console.WriteLine();
-        deck.Handing(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp); // Start game Handing two cards for each player
-
-        flag = check(sumPlayer, sumComp); // Checking if any player wins
-        if (flag == false)
-          break;
-
-        do
+        Console.WriteLine("Do You want any card or check ? (y/n)");
+        key = Convert.ToChar(Console.ReadLine());
+        if (key == 'y')
         {
-          Console.WriteLine("Do You want any card or check ? (y/n)");
-          key = Convert.ToChar(Console.ReadLine());
-          if (key == 'y')
-          {
-            deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp);
-            check(sumPlayer, sumComp);
-            if (sumPlayer > 21 && sumComp < 21)
-              Console.WriteLine("You lose!!!");
-            if (sumComp > 21 && sumPlayer < 21)
-              Console.WriteLine("You win!!!");
-            if (sumComp > 21 && sumPlayer > 21)
-              Console.WriteLine("Draw, try again");
-          }
-          else
-          {
-            flag = false;
-            if (sumPlayer > sumComp)
-              Console.WriteLine("\nYou Win!!!");
-            else if (sumComp > sumPlayer)
-              Console.WriteLine("\nYou lose!!!");
-            else Console.WriteLine("\nDraw, try again");
-            Console.WriteLine("Good Luck!!!");
-            break;
-          }
-
+          deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp);
+          check(sumPlayer, sumComp);
+          if (sumPlayer > 21 && sumComp < 21)
+            Console.WriteLine("You lose!!!");
+          if (sumComp > 21 && sumPlayer < 21)
+            Console.WriteLine("You win!!!");
+          if (sumComp > 21 && sumPlayer > 21)
+            Console.WriteLine("Draw, try again");
         }
-        while (sumPlayer < 21 && sumComp < 21);
+        else if (key == 'n') 
+        {
 
-        flag = false;
-
+          if (sumPlayer > sumComp)
+            Console.WriteLine("\nYou Win!!!");
+          else if (sumComp > sumPlayer)
+            Console.WriteLine("\nYou lose!!!");
+          else Console.WriteLine("\nDraw, try again");
+          Console.WriteLine("Good Luck!!!");
+          break;
+        }
+        else 
+        { Console.WriteLine("You input wrong symbol!!! Good bye...");
+          break;
+        }
       }
+      while (sumPlayer < 21 && sumComp < 21);
     }
   }
 }

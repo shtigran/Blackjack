@@ -12,9 +12,10 @@ namespace Deck_Of_Cards
     {
 
 
-      Game game1 = new Game();
+      Deck deck1 = new Deck();
+      deck1.SetDeck();
+      deck1.ShowDeck();
 
-      game1.Start();
 
       Console.ReadKey();
     }
@@ -23,9 +24,11 @@ namespace Deck_Of_Cards
   class Deck
   {
 
-    private int[,] arr = new int[4, 8];
+    private int[,] arr = new int[4, 13];
     private string[] suit = new string[4] { "Diamonds", "Hearts", "Spades", "Clubs" };
     private string[] cards = new string[13] { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen", "King", "Ace" };
+
+
 
     public void SetDeck()
     {
@@ -37,7 +40,7 @@ namespace Deck_Of_Cards
         while (true)
         {
           r = rand.Next(0, 4);
-          c = rand.Next(0, 8);
+          c = rand.Next(0, 13);
 
           if (arr[r, c] == 0)
           {

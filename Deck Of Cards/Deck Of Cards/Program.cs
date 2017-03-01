@@ -15,7 +15,7 @@ namespace Deck_Of_Cards
       Game game = new Game();
       game.ShowDeck();
       game.Start();
-
+       
 
       Console.ReadKey();
     }
@@ -370,8 +370,6 @@ namespace Deck_Of_Cards
               Console.WriteLine("You win!!!");
             if (sumComp > 21 && sumPlayer > 21)
               Console.WriteLine("Draw, try again");
-
-
           }
           else
           {

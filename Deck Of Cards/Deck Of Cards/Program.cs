@@ -81,7 +81,7 @@ namespace Deck_Of_Cards
       {
         for (int i = 0; i < 4; i++)
         {
-          for (int j = 0; j < 8; j++)
+          for (int j = 0; j < 13; j++)
           {
             if (arr[i, j] == n)
             {
@@ -91,6 +91,21 @@ namespace Deck_Of_Cards
                 int b = 0;
                 switch (cards[j])
                 {
+                  case "Two":
+                    b = 2;
+                    break;
+                  case "Three":
+                    b = 3;
+                    break;
+                  case "Four":
+                    b = 4;
+                    break;
+                  case "Five":
+                    b = 5;
+                    break;
+                  case "Six":
+                    b = 6;
+                    break;
                   case "Seven":
                     b = 7;
                     break;
@@ -118,6 +133,21 @@ namespace Deck_Of_Cards
                 int b = 0;
                 switch (cards[j])
                 {
+                  case "Two":
+                    b = 2;
+                    break;
+                  case "Three":
+                    b = 3;
+                    break;
+                  case "Four":
+                    b = 4;
+                    break;
+                  case "Five":
+                    b = 5;
+                    break;
+                  case "Six":
+                    b = 6;
+                    break;
                   case "Seven":
                     b = 7;
                     break;
@@ -152,13 +182,13 @@ namespace Deck_Of_Cards
 
     public void HandingOne(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2)
         {
-            int k = n + 1;
+           int k = n + 1;
 
             while (n <= k)
             {
                 for (int i = 0; i < 4; i++)
                 {
-                    for (int j = 0; j < 8; j++)
+                    for (int j = 0; j < 13; j++)
                     {
                         if (arr[i, j] == n)
                         {

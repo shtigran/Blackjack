@@ -72,7 +72,7 @@ namespace Deck_Of_Cards
       }
     }
 
-    public void Handing(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2)
+    public void Handing(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2, string name)
     {
       while (n <= 4)
       {
@@ -173,13 +173,13 @@ namespace Deck_Of_Cards
         }
         n++;
       }
-      Console.WriteLine($"The Player has: {str1}\n(sum is: {sum1})\n");
+      Console.WriteLine($"{name} has: {str1}\n(sum is: {sum1})\n");
       Console.WriteLine($"The Computer has: {str2}\n(sum is: {sum2})\n");
       Console.WriteLine(new string('-', 80));
 
     }
 
-    public void HandingOne(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2)
+    public void HandingOne(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2, string name)
     {
       int k = n + 1;
 
@@ -282,7 +282,7 @@ namespace Deck_Of_Cards
         }
         n++;
       }
-      Console.WriteLine($"\nThe Player has: {str1}\n(sum is: {sum1})\n\n");
+      Console.WriteLine($"\n{name} has: {str1}\n(sum is: {sum1})\n\n");
       Console.WriteLine($"The Computer has: {str2}\n(sum is: {sum2})\n");
       Console.WriteLine(new string('-', 80));
     }
@@ -300,6 +300,7 @@ namespace Deck_Of_Cards
     }
 
     private int n;
+    string name = string.Empty;
     public void ShowDeck()
     {
       deck.ShowDeck();
@@ -316,7 +317,7 @@ namespace Deck_Of_Cards
 
       if (sumPlayer == 21)
       {
-        Console.WriteLine("\nPlayer You win, Congratulations!!!");
+        Console.WriteLine($"\n{name} You win, Congratulations!!!");
         return false;
       }
 
@@ -340,14 +341,17 @@ namespace Deck_Of_Cards
 
       int sumPlayer = 0;
       int sumComp = 0;
+      
       char key;
       bool flag;
 
         Console.WriteLine("*****Welcome to Blackjack*****");
         Console.WriteLine("\n_____We Start Our Game!!!_____\n");
+        Console.Write("Please enter Your name: ");
+        name = Console.ReadLine();
         Console.WriteLine(new string('-', 30));
         Console.WriteLine();
-        deck.Handing(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp); // Start game Handing two cards for each player
+        deck.Handing(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp, name); // Start game Handing two cards for each player
 
         flag = check(sumPlayer, sumComp); // Checking if any player wins
         if (flag == false)
@@ -359,7 +363,7 @@ namespace Deck_Of_Cards
           key = Convert.ToChar(Console.ReadLine());
           if (key == 'y')
           {
-            deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp);
+            deck.HandingOne(ref n, ref sumPlayer, ref sumComp, ref cardsPlayer, ref cardsComp, name);
             check(sumPlayer, sumComp);
             if (sumPlayer > 21 && sumComp < 21)
               Console.WriteLine("You lose!!!");

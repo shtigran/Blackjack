@@ -2,7 +2,7 @@
 # C#6.0  .NET Framework 4.6
 
 ----
-### Test and Result
+### Test
 
 ![gif source](https://github.com/shtigran/Blackjack/blob/master/Blackjack.gif)
 

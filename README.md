@@ -11,3 +11,15 @@ Reach a final score higher than the dealer without exceeding 21; or
 Let the dealer draw additional cards until his or her hand exceeds 21.
 
 ----
+
+### Purpose
+
+This is a light version of the game that runs on the console. With this program you can easily learn and practice this game. I hope the program will help to master the principles of the game with the addition of risk and luck.
+
+----
+
+###  The structure of program
+
+The progrm has two classes, which implement severeal methods.
+The first class is Deck, which is responsible for creatin deck, set deck, and for handing. There are SetDeck, ShowDeck, Handing and HandingOne methods in Deck class, which allow manipulate with deck of card.
+The second class is Game class, which is responsible for gaming process and has Start() method, which uses the methods of Deck class.

@@ -12,9 +12,9 @@ namespace Deck_Of_Cards
     {
 
 
-      Deck deck1 = new Deck();
-      deck1.SetDeck();
-      deck1.ShowDeck();
+      Game game = new Game();
+      game.ShowDeck();
+      game.Start();
 
 
       Console.ReadKey();
@@ -65,14 +65,12 @@ namespace Deck_Of_Cards
           {
             if (arr[i, j] == number)
               Console.Write($"Card {number:d2}:   * {cards[j]} of {suit[i]} *");
-
           }
 
         }
         Console.WriteLine();
         number++;
       }
-
     }
 
     public void Handing(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2)
@@ -392,13 +390,7 @@ namespace Deck_Of_Cards
 
         flag = false;
 
-
-
       }
-
-
     }
-
   }
-
 }

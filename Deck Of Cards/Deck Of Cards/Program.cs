@@ -178,7 +178,7 @@ namespace Deck_Of_Cards
       Console.WriteLine(new string('-', 80));
 
     }
-
+      
     public void HandingOne(ref int n, ref int sum1, ref int sum2, ref string str1, ref string str2, string name)
     {
       int k = n + 1;

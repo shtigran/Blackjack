@@ -32,4 +32,6 @@ For more information see Code:
   - [For more information see Code:]
   [For more information see Code:]: <https://github.com/shtigran/Blackjack/blob/master/Deck%20Of%20Cards/Deck%20Of%20Cards/Program.cs>
 
-[![N|Solid]https://github.com/shtigran/Blackjack/blob/master/unnamed.png)]
+
+![alt text](https://github.com/shtigran/Blackjack/blob/master/unnamed.png)
+

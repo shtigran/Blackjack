@@ -1,4 +1,5 @@
-# Blackjack
+# Blackjack ![alt text](https://github.com/shtigran/Blackjack/blob/master/unnamed.png)
+
 # C#6.0  .NET Framework 4.6
 
 ----

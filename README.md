@@ -31,3 +31,5 @@ In Programm class we create an object of Game and invoke its start methods and g
 For more information see Code: 
   - [For more information see Code:]
   [For more information see Code:]: <https://github.com/shtigran/Blackjack/blob/master/Deck%20Of%20Cards/Deck%20Of%20Cards/Program.cs>
+
+[![N|Solid](https://lh3.ggpht.com/zKR6s9Gaqqa4XYnscTMiaH6o1gM5mlIjueiNwBbSt8hq1dGar7zZRHT9FMWCNwNjvQ=h900)]

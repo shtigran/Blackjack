@@ -1,10 +1,6 @@
-# Blackjack 
-
-# C#6.0  .NET Framework 4.6 
-
 ----
-![alt text](https://github.com/shtigran/Blackjack/blob/master/blackjack-logo.jpg)
-
+# Blackjack
+# C#6.0  .NET Framework 4.6 
 
 ----
 ### Test

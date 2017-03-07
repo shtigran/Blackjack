@@ -32,7 +32,7 @@ The second class is Game class, which is responsible for gaming process and has 
 In Programm class we create an object of Game and invoke its start methods and game starts.
 For more information see Code: 
   - [For more information see Code:]
-  [For more information see Code:]: <https://github.com/shtigran/Blackjack/blob/master/Deck%20Of%20Cards/Deck%20Of%20Cards/Program.cs>
+  For more information see [Code:]: <https://github.com/shtigran/Blackjack/blob/master/Deck%20Of%20Cards/Deck%20Of%20Cards/Program.cs>
 
 
 ![alt text](https://github.com/shtigran/Blackjack/blob/master/unnamed.png)

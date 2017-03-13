@@ -21,7 +21,7 @@ Let the dealer draw additional cards until his or her hand exceeds 21.
 
 ### Purpose
 
-This is a light version of the game that runs on the console. With this program you can easily learn and practice this game. I hope the program will help to master the principles of the game with the addition of risk and luck.
+This is a light version of the game, that runs on the Console. With this program you can easily learn and practice the Blackjack. I hope the program will help to master the principles of the game with the addition of risk and luck.
 
 ----
 
